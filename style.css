@@ -1,0 +1,97 @@
+/* Basic styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.content{
+  opacity:1;
+}
+.login-button{
+  padding:2.5%;
+}
+.login-container{
+  background-image:url(images/veerangana.png);
+  background-size: contain;
+  font-weight: bold;
+}
+#loginBtn{
+  font-size:16px;
+  font-weight:bold;
+  background:transparent;
+  color:white;
+}
+.menu{
+  padding:3%;
+  display:inline-flex;
+  gap:14px;
+  text-align: center;
+  vertical-align: center;
+}
+.active, .menu-option{
+  padding:5px;
+}
+.active,.menu-option:hover{
+  background-color: #06038D;
+  border-radius: 4px;
+}
+.services{
+  font-size: 20px;
+  width:120px;
+  border-radius: 4px;
+  background-color: #06038D;
+  color:white;
+  background: transparent;
+}
+a{
+  text-decoration: none;
+  color:inherit;
+  padding:2px;
+  text-align:center;
+}
+.logo{
+  display:inline-flex;
+  gap:10px;
+}
+.navigation-bar{
+  display:flex;
+  flex-direction: row;
+  gap:2%;
+  font-size: 21px;
+}
+.serv-btn{
+  display:inline-flex;
+  gap:12px;
+  width:300px;
+  height:65px;
+  font-size:25px;
+  font-weight: bold;
+  background-color: #046A38;
+  color:white;
+}
+.overview{
+  background-color: #eddede;
+  display: flex;
+  flex-direction: row;
+  gap:11%;
+}
+.promo-content{
+  padding:3%;
+}
+header, footer {
+  background-color: #046A38;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+main {
+  padding: 20px;
+}
+
+h1 {
+  margin: 0;
+}
+
+.hidden {
+  display: none;
+}
