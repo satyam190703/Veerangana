@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Veerangana-Safety Cab System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="navigation-bar">
+      <div class="logo">
+        <a href="index.html"><img src="images/Veerangana-logo.png" alt="logo" style="height:95px;" loading="lazy"/>
+        <a href="index.html"><p style="width:182px;font-family:cursive">Ride with Courage,<br>Ride with Safety</p></a>
+      </div>
+      <div class="menu">
+        <a href="index.html" class="active" style="height:25px;">Home</a>
+        <button id="loginBtn" style="width:120px; height:35px;">Ride Booking</button>
+        <select name="services" class="services" style="height:35px;">
+          <option value="default" style="display:none;">Services</option>
+          <option value="Cab Services" style="color:black;">Cab Services</option>
+          <option value="Corporate Services" style="color:black;">Corporate Services</option>
+          <option value="Chauffeur" style="color:black;">Chauffeur</option>
+          <option value="Swayam(wheelchair services)" style="color:black;">Swayam(wheelchair services)</option>
+        </select>
+        <a href="about.html" class="menu-option" style="width:120px;height:25px;">About Us</a>
+        <a href="contact.html" class="menu-option" style="width:124px;height:25px;">Contact Us</a>
+        <select name="services" class="services" style="height:35px;width:140px;">
+          <option value="default" style="display:none;">Employment</option>
+          <option value="Cab Services" style="color:black;">Job Applications</option>
+        </select>
+      </div>
+      <div class="login-button">
+        <a href="login.html"><img src="images/user-icon.png" alt="user-icon" loading="lazy" style="width:40px;height:40px;"></a>
+      </div>
+    </nav>
+  </header>
+  <section class="overview" id="home">
+    <div class="promo-content">
+      <p style="font-size: 50px;">Safe and Reliable Transport,<br>By and For Women</p>
+      <div>
+        <button class="serv-btn">
+          <img src="images/car-icon-png-1.webp" alt="car-icon" loading="lazy" style="height:55px;"/>
+          Request A Cab
+        </button>
+      </div>
+      <br>
+      <div>
+        <button class="serv-btn">
+          <img src="images/female-chauffeur.jpg" alt="chauffeur-icon" loading="lazy" style="height:55px; border-radius:50%;"/>
+          Hire a Chauffeur
+        </button>
+      </div>
+    </div>
+    <div>
+      <img src="images/promo.png" alt="home-img" loading="lazy" style="height:480px;"/>
+    </div>
+  </section>
+  <main>
+    <div id="rideForm" class="hidden">
+      <h2>Book a Safe Ride</h2>
+      <form id="bookingForm">
+        <label for="pickupLocation">Pickup Location:</label>
+        <input type="text" id="pickupLocation" required>
+        <label for="destination">Destination:</label>
+        <input type="text" id="destination" required>
+        <button type="submit">Book Ride</button>
+      </form>
+    </div>
+    <div id="rideStatus" class="hidden">
+      <h2>Ride Status</h2>
+      <p id="status" style="font-size:20px;"></p>
+      <p style="font-size: 20px;" id="help">Press the Button below in Emergency:</p>
+      <button style="background-color: red;color:white;height:40px;width:120px;" id="panic">Panic Button</button>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2024 Veerangana- Safety Cab System</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

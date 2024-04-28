@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Veerangana- Safety Cab System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="navigation-bar">
+      <div class="logo">
+        <a href="index.html"><img src="images/Veerangana-logo.png" alt="logo" style="height:95px;loading:lazy;"/>
+        <a href="index.html"><p>Ride with Courage,<br>Ride with Safety</p></a>
+      </div>
+      <div class="menu">
+        <a href="index.html" class="menu-option">Home</a>
+        <button id="loginBtn">Ride Booking</button>
+        <select name="services" class="services">
+          <option value="default" style="display:none;">Services</option>
+          <option value="Cab Services">Cab Services</option>
+          <option value="Corporate Services">Corporate Services</option>
+          <option value="Chauffeur">Chauffeur</option>
+        </select>
+        <a href="about.html" class="menu-option">About Us</a>
+        <a href="contact.html" class="menu-option">Contact Us</a>
+      </div>
+    </nav>
+  </header>
+  <center><div class="login-container">
+    <div class="content"><h2>Login</h2>
+    <form id="login-form">
+      <div class="form-group">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <nobr><button type="submit">Login</button>
+      Forgot Password?</nobr>
+      <p>Don't have an account? <a href="#">Signup</a></p>
+    </form></div>
+  </div></center>
+  <main>
+    <div id="rideForm" class="hidden">
+      <h2>Book a Safe Ride</h2>
+      <form id="bookingForm">
+        <label for="pickupLocation">Pickup Location:</label>
+        <input type="text" id="pickupLocation" required>
+        <label for="destination">Destination:</label>
+        <input type="text" id="destination" required>
+        <button type="submit">Book Ride</button>
+      </form>
+    </div>
+    <div id="rideStatus" class="hidden">
+      <h2>Ride Status</h2>
+      <p>Your ride is on the way. Please wait.</p>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2024 SafeRide - Safety Cab System</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
