@@ -34,6 +34,6 @@ document.addEventListener('DOMContentLoaded', function() {
     setTimeout(function() {
       // If ride is not completed within estimated time, trigger security measures
       alert('Your ride is taking longer than expected. Please stay safe and contact authorities if necessary.(Helpline No:.....)');
-    }, 30000); // 5 minutes (adjust time as needed)
+    }, 15000); // 15 seconds (adjust time as needed)
   });
 });
